@@ -398,8 +398,11 @@ static BOOL configured = FALSE;
 	if ((self = [super init])) {
 
 		//Initialise the audio session
-		AVAudioSession* session = [AVAudioSession sharedInstance];
-		session.delegate = self;
+		// AVAudioSession* session = [AVAudioSession sharedInstance];
+		// session.delegate = self;
+        
+        [AVAudioSession sharedInstance];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(interruption:) name:AVAudioSessionInterruptionNotification object:nil];
 
 		_mode = mode;
 		backgroundMusicCompletionSelector = nil;
@@ -498,6 +501,23 @@ static BOOL configured = FALSE;
 }
 
 #pragma mark Audio Interrupt Protocol
+
+- (void) interruption:(NSNotification*)notification
+{
+    NSDictionary *interuptionDict = notification.userInfo;
+    NSUInteger interuptionType = (NSUInteger)[interuptionDict valueForKey:AVAudioSessionInterruptionTypeKey];
+    
+    if (interuptionType == AVAudioSessionInterruptionTypeBegan)
+        [self beginInterruption];
+#if __CC_PLATFORM_IOS >= 40000
+    else if (interuptionType == AVAudioSessionInterruptionTypeEnded)
+        [self endInterruptionWithFlags:(NSUInteger)[interuptionDict valueForKey:AVAudioSessionInterruptionOptionKey]];
+#else
+    else if (interuptionType == AVAudioSessionInterruptionTypeEnded)
+        [self endInterruption];
+#endif
+}
+
 
 -(BOOL) mute {
 	return _mute;

@@ -219,6 +219,8 @@ typedef enum {
 
 -(void) setBackgroundMusicCompletionListener:(id) listener selector:(SEL) selector;
 
+- (void) interruption:(NSNotification*)notification;
+
 @end
 
 /** Fader for long audio source objects */

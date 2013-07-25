@@ -46,6 +46,10 @@
 #import "ccGLStateCache.h"
 #import "CCShaderCache.h"
 
+#include <sys/sysctl.h>
+#import <mach/mach.h>
+#import <mach/mach_host.h>
+
 // support imports
 #import "Platforms/CCGL.h"
 #import "Platforms/CCNS.h"
@@ -105,6 +109,7 @@ extern NSString * cocos2dVersion(void);
 // singleton stuff
 //
 static CCDirector *_sharedDirector = nil;
+
 
 + (CCDirector *)sharedDirector
 {
@@ -555,6 +560,8 @@ static CCDirector *_sharedDirector = nil;
 }
 
 
+
+
 // display statistics
 -(void) showStats
 {
@@ -577,7 +584,7 @@ static CCDirector *_sharedDirector = nil;
 //			sprintf(format,"%.1f",frameRate);
 //			[FPSLabel setCString:format];
 
-			NSString *fpsstr = [[NSString alloc] initWithFormat:@"%.1f", frameRate_];
+			NSString *fpsstr = [[NSString alloc] initWithFormat:@"%.1f   %.1f", frameRate_, [CCDirector getAvailableMegaBytes]];
 			[FPSLabel_ setString:fpsstr];
 			[fpsstr release];
 			
@@ -632,6 +639,34 @@ static CCDirector *_sharedDirector = nil;
 	[SPFLabel_ setPosition: ccpAdd( ccp(0,17), CC_DIRECTOR_STATS_POSITION ) ];
 	[FPSLabel_ setPosition: CC_DIRECTOR_STATS_POSITION ];
 }
+
+
++(double) getAvailableBytes
+{
+    vm_statistics_data_t vmStats;
+    mach_msg_type_number_t infoCount = HOST_VM_INFO_COUNT;
+    kern_return_t kernReturn = host_statistics(mach_host_self(), HOST_VM_INFO, (host_info_t)&vmStats, &infoCount);
+    
+    if (kernReturn != KERN_SUCCESS)
+    {
+        return NSNotFound;
+    }
+    
+    return (vm_page_size * vmStats.free_count);
+}
+
++(double) getAvailableKiloBytes
+{
+    return [CCDirector getAvailableBytes] / 1024.0;
+}
+
++(double) getAvailableMegaBytes
+{
+    return [CCDirector getAvailableKiloBytes] / 1024.0;
+}
+
+
+
 
 @end
 

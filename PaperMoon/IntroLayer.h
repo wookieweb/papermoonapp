@@ -2,8 +2,8 @@
 //  IntroLayer.h
 //  PaperMoon
 //
-//  Created by Andy Woo on 5/6/13.
-//  Copyright __MyCompanyName__ 2013. All rights reserved.
+//  Created by Andy Woo on 25/12/12.
+//  Copyright __MyCompanyName__ 2012. All rights reserved.
 //
 
 
@@ -13,6 +13,8 @@
 // HelloWorldLayer
 @interface IntroLayer : CCLayer
 {
+    int assetLoadCount;
+    BOOL loadingAsset;
 }
 
 // returns a CCScene that contains the HelloWorldLayer as the only child
