@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>scene8_background.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,0},{568,320}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{568,320}}</string>
+                <key>sourceSize</key>
+                <string>{568,320}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>scene8_background-568h.pvr.ccz</string>
+            <key>size</key>
+            <string>{568,320}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:06c0a1cee6babee69181c215b7f3d83b$</string>
+            <key>textureFileName</key>
+            <string>scene8_background-568h.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

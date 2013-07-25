@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>scene6_flower.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{98,352}}</string>
+                <key>offset</key>
+                <string>{-293,-84}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{226,228},{98,352}}</string>
+                <key>sourceSize</key>
+                <string>{1136,640}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>scene6_flower-hd.pvr.ccz</string>
+            <key>size</key>
+            <string>{128,512}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:e4a6c5b1d0c5b9faca4dbe8274801e6f$</string>
+            <key>textureFileName</key>
+            <string>scene6_flower-hd.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

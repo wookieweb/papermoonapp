@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>scene7_sky.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{168,226}}</string>
+                <key>offset</key>
+                <string>{200,47}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{400,0},{168,226}}</string>
+                <key>sourceSize</key>
+                <string>{568,320}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>scene7_sky.pvr.ccz</string>
+            <key>size</key>
+            <string>{172,230}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:b45c9593ae389b12459da3fe25a492b9$</string>
+            <key>textureFileName</key>
+            <string>scene7_sky.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

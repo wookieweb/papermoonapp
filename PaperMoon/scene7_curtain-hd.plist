@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>scene7_curtain.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{1136,514}}</string>
+                <key>offset</key>
+                <string>{0,43}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,20},{1136,514}}</string>
+                <key>sourceSize</key>
+                <string>{1136,640}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>scene7_curtain-hd.pvr.ccz</string>
+            <key>size</key>
+            <string>{1140,518}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:021438732ef69b82cb6c155c9720c943$</string>
+            <key>textureFileName</key>
+            <string>scene7_curtain-hd.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>scene6_curtainClosedRepeatLeft.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,0},{266,544}}</string>
+                <key>offset</key>
+                <string>{-299,25}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{136,23},{266,544}}</string>
+                <key>sourceSize</key>
+                <string>{1136,640}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>scene6_curtainClosedLeft-hd.pvr.ccz</string>
+            <key>size</key>
+            <string>{512,1024}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:2361832dc5cea83f090413a9f917bb15$</string>
+            <key>textureFileName</key>
+            <string>scene6_curtainClosedLeft-hd.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>
